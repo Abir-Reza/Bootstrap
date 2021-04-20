@@ -42,3 +42,7 @@ body {
 .navbar-dark {
   background-color: #512da8;
 }
+
+.card {
+  margin-top: 10px;
+}
