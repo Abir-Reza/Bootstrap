@@ -26,13 +26,13 @@
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <div class="container">
             <a class="navbar-brand mr-auto" href="#"> <img src="img/logo.png" height="30" width="41"> </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynavbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
                 <span class="navbar-toggler-icon"></span>                
             </button>
             
            <!-- #To hide the items from the navigation bar for the small screens, 
             we need to enclose the ul within another div as follows -->
-            <div class="collapse navbar-collapse" id="mynavbar">
+            <div class="collapse navbar-collapse" id="navbar">
                 <!-- # mr- right margin as much as possible -->
                 <ul class="navbar-nav mr-auto"> 
                     <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home </a></li>
@@ -53,8 +53,9 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
+                <div class="col-12 col-sm-6 align-self-center">
                     <img src="img/logo.png" class="img-fluid">
+                    <button class="btn btn-warning align-self-center ml-auto col-12 col-sm-3" style="padding: 3px 0px 3px 0px;">Reserve Table</button>
                 </div>
             </div>
         </div>
@@ -84,9 +85,13 @@
             <div class="col-12 col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
             </div>
+            
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">New</span></h2>
+                <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+            </div>
+            <div class="media">
+                <img class="d-flex ml-3 img-thumbnail align-self-center" src="img/buffet.png" alt="buffet">
             </div>
         </div>
 
