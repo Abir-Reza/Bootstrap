@@ -25,10 +25,12 @@
 
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <div class="container">
-            <a class="navbar-brand mr-auto" href="#"> <img src="img/logo.png" height="30" width="41"> </a>
+            
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
                 <span class="navbar-toggler-icon"></span>                
             </button>
+
+            <a class="navbar-brand mr-auto" href="#"> <img src="img/logo.png" height="30" width="41"> </a>
             
            <!-- #To hide the items from the navigation bar for the small screens, 
             we need to enclose the ul within another div as follows -->
@@ -53,10 +55,11 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
+
                 <div class="col-12 col-sm-6 align-self-center">
                     <img src="img/logo.png" class="img-fluid">
-                    <button class="btn btn-warning align-self-center ml-auto col-12 col-sm-3" style="padding: 3px 0px 3px 0px;">Reserve Table</button>
-                </div>
+                    <button class="btn btn-sm btn-warning align-self-center ml-auto col-12 col-sm-3" >Reserve Table</button>
+                </div> 
             </div>
         </div>
     </header>
@@ -114,69 +117,72 @@
             </div>
         </div>
 
-        <div class="row row-content col-12 col-sm-8">
-            
-            <div class="card" >
-                <h3 class="card-header bg-warning text-white"> Reserve a Table</h3>
-
-                <div class="card-body ">
-                    <form action="">
-                        <!-- #divide form into groups -->
-                        <div class="form-group row ">
-                            <label for="numberOfGuests" class="col-sm-2 col-form-label"> Number of Guests</label>
-                            <div class="col-sm-10">
-                                <div class="form-check form-check-inline align-self-center">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                    <label class="form-check-label" for="inlineRadio1">1</label>
+        <div class="row row-content align-items-center col-12 col-sm-8 ">
+            <div class="d-flex justify-content-center">
+                <div class="card " >
+                    <h3 class="card-header bg-warning text-white"> Reserve a Table</h3>
+    
+                    <div class="card-body ">
+                        <form action="" id="#reservationForm">
+                            <!-- #divide form into groups -->
+                            <div class="form-group row ">
+                                <label for="numberOfGuests" class="col-sm-2 col-form-label"> Number of Guests</label>
+                                <div class="col-sm-10">
+                                    <div class="form-check form-check-inline align-self-center">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">1</label>
+                                    </div>
+                                    <div class="form-check form-check-inline align-self-center">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">2</label>
+                                    </div>
+                                    <div class="form-check form-check-inline align-self-center">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                        <label class="form-check-label" for="inlineRadio3">3</label>
+                                    </div>
+                                    <div class="form-check form-check-inline align-self-center">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                                        <label class="form-check-label" for="inlineRadio4">4</label>
+                                    </div>
+                                    <div class="form-check form-check-inline align-self-center">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+                                        <label class="form-check-label" for="inlineRadio5">5</label>
+                                    </div>
+                                    <div class="form-check form-check-inline align-self-center">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6">
+                                        <label class="form-check-label" for="inlineRadio6">6</label>
+                                    </div>
+    
                                 </div>
-                                <div class="form-check form-check-inline align-self-center">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                    <label class="form-check-label" for="inlineRadio2">2</label>
-                                </div>
-                                <div class="form-check form-check-inline align-self-center">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                                    <label class="form-check-label" for="inlineRadio3">3</label>
-                                </div>
-                                <div class="form-check form-check-inline align-self-center">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
-                                    <label class="form-check-label" for="inlineRadio4">4</label>
-                                </div>
-                                <div class="form-check form-check-inline align-self-center">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
-                                    <label class="form-check-label" for="inlineRadio5">5</label>
-                                </div>
-                                <div class="form-check form-check-inline align-self-center">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6">
-                                    <label class="form-check-label" for="inlineRadio6">6</label>
-                                </div>
-
                             </div>
-                        </div>
-
-                        <div class="form-group row ">
-                            <label for="dateAndTime" class="col-sm-2 col-form-label">Date and Time</label>
-                            <div class="col-12 col-sm-5">
-                                <input type="text" class="form-control" id="dateAndTime" name="dateAndTime" placeholder="Date">
+    
+                            <div class="form-group row ">
+                                <label for="dateAndTime" class="col-sm-2 col-form-label">Date and Time</label>
+                                <div class="col-12 col-sm-5">
+                                    <input type="text" class="form-control" id="dateAndTime" name="dateAndTime" placeholder="Date">
+                                </div>
+    
+                                <div class="col-12 col-sm-5">
+                                    <input type="text" class="form-control" id="dateAndTime" name="dateAndTime" placeholder="Time">
+                                </div>                                                 
                             </div>
-
-                            <div class="col-12 col-sm-5">
-                                <input type="text" class="form-control" id="dateAndTime" name="dateAndTime" placeholder="Time">
-                            </div>                                                 
-                        </div>
-
-                        </div>
-   
-                        <!-- Submit button -->
-                        <div class="form-group row">
-                            <div class="offset-sm-2 col-md-10">
-                                <button type="submit" class="btn btn-primary ml-3" >Reserve</button>
+    
                             </div>
-                        </div>
-                    </form>
-
+       
+                            <!-- Submit button -->
+                            <div class="form-group row">
+                                <div class="offset-sm-2 col-md-10">
+                                    <button type="submit" class="btn btn-primary ml-3" >Reserve</button>
+                                </div>
+                            </div>
+                        </form>
+    
+                    </div>
                 </div>
             </div>
-    </div>
+            
+            
+        </div>
     </div>
 
     <footer class="footer">
